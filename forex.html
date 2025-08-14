@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forex Journal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="image/logo.png" type="image/png">
+</head>
+<body class="forex">
+
+  <div class="fixed-header">
+    <h1>Welcome to johnpaul's Progress Hub</h1>
+    <p>Your journey in coding, mechatronics, and forex starts here.</p>
+  </div>
+
+  <div class="fixed-nav">
+    <a href="coding.html">Coding Tracker</a>
+    <a href="mechatronics.html">Mechatronics Project</a>
+    <a href="forex.html">Forex Journal</a>
+    <a href="reflection.html">Reflections</a>
+    <a href="college.html">College Prep</a>
+  </div>
+
+  <div class="sidebar">
+    <p><strong>Forex Tips</strong></p>
+    <ul>
+      <li>Always journal your trades</li>
+      <li>Review emotional triggers</li>
+      <li>Track performance trends</li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h2>Forex Trading Journal</h2>
+    <p>Log your trades, strategies, and performance here.</p>
+
+    <div>
+      <img src="image/Forex.jpg" alt="Forex Journal">
+      <a href="forex.html">
+        <h3>Forex Journal</h3>
+      </a>
+    </div>
+
+    <div class="split-layout">
+      <!-- Sidebar Form -->
+      <aside class="left-panel">
+        <form action="#" method="post">
+          <label for="pair">Currency Pair:</label>
+          <input type="text" id="pair" name="pair" placeholder="e.g. AUDCAD">
+
+          <label for="direction">Trade Direction:</label>
+          <select id="direction" name="direction">
+            <option value="Buy">Buy</option>
+            <option value="Sell">Sell</option>
+          </select>
+
+          <label for="entry">Entry Price:</label>
+          <input type="number" step="0.0001" id="entry" name="entry">
+
+          <label for="exit">Exit Price:</label>
+          <input type="number" step="0.0001" id="exit" name="exit">
+
+          <label for="result">Result:</label>
+          <select id="result" name="result">
+            <option value="Win">Win</option>
+            <option value="Loss">Loss</option>
+            <option value="Break-even">Break-even</option>
+          </select>
+
+          <label for="notes">Trade Notes:</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Setup, emotions, lessons"></textarea>
+
+          <input type="submit" value="Log Trade">
+        </form>
+      </aside>
+
+      <!-- Main Progress Board -->
+      <section class="right-panel">
+        <h3>Trade History</h3>
+        <div class="progress-item">
+          <strong>Pair:</strong> AUDCAD<br>
+          <strong>Direction:</strong> Sell<br>
+          <strong>Entry:</strong> 0.89952<br>
+          <strong>Exit:</strong> 0.89270<br>
+          <strong>Result:</strong> Loss<br>
+          <strong>Notes:</strong> Entered at resistance, SL too tight.
+        </div>
+        <!-- More trades will appear here -->
+      </section>
+    </div>
+  </div>
+
+  <div class="fixed-footer">
+    &copy; 2025 johnpaul | Built with passion and purpose
+  </div>
+
+</body>
+</html>
+
